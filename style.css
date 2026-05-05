@@ -1,0 +1,109 @@
+:root {
+    --primary: #e75cb9;
+    --secondary: #ce008d;
+    --bg: #f0f2f5;
+    --text: #2d3436;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 40px;
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+
+.novo-post {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.novo-post input, .novo-post textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+    box-sizing: border-box; 
+}
+
+.novo-post input:focus {
+    border-color: var(--primary);
+}
+
+
+button {
+    cursor: pointer;
+    padding: 12px 24px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background-color: #c44ba8;
+    transform: translateY(-2px);
+}
+
+.btn-principal {
+    display: block;
+    margin: 0 auto 30px;
+    background-color: var(--secondary);
+}
+
+.btn-principal:hover {
+    background-color: #b80081;
+}
+
+
+.grid-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #636e72;
+}
+

@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="api.js"></script>
-    <title>API</title>
+    <title>Minha API - Ana Lemes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <section class="novo-post">
+        <h2>Criar Novo Post</h2>
+        <input type="text" id="titulo" placeholder="Título do post">
+        <textarea id="texto" placeholder="Conteúdo do post"></textarea>
+        <button onclick="criarPostLocal()">Adicionar Card</button>
+    </section>
+
+    <hr>
+
+    <section class="controles">
+        <button id="btnCarregar" class="btn-principal">Carregar Dados da API</button>
+    </section>
+
+    <div id="container-posts" class="grid-posts">
+        </div>
+
+    <script src="api.js"></script>
 </body>
 </html>
